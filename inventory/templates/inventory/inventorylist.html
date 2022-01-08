@@ -1,0 +1,15 @@
+{% load static%}
+<div>
+    <h1>Download CSV <a href="{% url 'inventory:download' %}">Here</a></h3></h1>
+    <h1>Create new Inventory <a href="{% url 'inventory:create' %}">Here</a></h3></h1>
+    <br><br>
+    <h1>Inventory List:</h1>
+    {% for inventory in inventories %}
+    <h2>{{inventory.name}}</h2>
+    <p>{{inventory.description}}</p>
+    <a href="{% url 'inventory:inventory' pk=inventory.pk %}">Take closer look</a> <br>
+    <a href="{% url 'inventory:edit' pk=inventory.pk %}">Edit</a>
+    <a href="{% url 'inventory:delete' pk=inventory.pk %}">Delete</a>
+
+    {% endfor %}
+</div>
