@@ -3,22 +3,36 @@
 - The Site is run upon the web framework dJango. Written in Python.
 - Database used is sqlite3 for it's small size for this small scale project
 
+# Prerequisites
 
+- git
+- python 3.8+
+- pip
+- virtualenv
 
-# First: Install everything in requirements.txt
+# Install
+
+1. Clone repository
 
 ```
-pip install -r requirements.txt
+git clone https://github.com/LastAeon77/Shopifybackend.git
 ```
 
-# Then:
+2. Install dependencies (If you would like to make virtual env you could also do that)
+
+```
+pip3 install -r requirements.txt
+```
+
+# Running the program:
+
+1. CD into correct directory
 
 ```
 cd into shopify backend
-the folder structure should include manage.py and 2 folder(inventory and shopifybackend).
-
-(Also some other misc files)
 ```
+
+the folder structure should include manage.py and 2 folder(inventory and shopifybackend).
 
 # Migrate data
 
@@ -35,12 +49,11 @@ python manage.py migrate
 ```
 run: python manage.py runserver
 
+```
+
 The site should be up and running at port 8000 (Or whatever it will tell you in the terminal in special cases)
 
 Link: http://localhost:8000/
-
-
-```
 
 # Site itself
 
