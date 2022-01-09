@@ -1,3 +1,10 @@
+# About the site:
+
+- The Site is run upon the web framework dJango. Written in Python.
+- Database used is sqlite3 for it's small size for this small scale project
+
+
+
 # First: Install everything in requirements.txt
 
 ```
